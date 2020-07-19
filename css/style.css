@@ -1015,6 +1015,7 @@ body.menu-opened {
 .product-images {
 	width: 100%;
 	margin-bottom: 30px;
+	padding: 0 15px;
 }
 
 .product-images__big-photo {
