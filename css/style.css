@@ -824,7 +824,9 @@ button.mfp-close {
 .popup_empty.visible {
 	display: block;
 }
-
+.swiper-container {
+	padding-bottom: 5px;
+}
 @media (max-width: 1370px) {
 
 .product-controls__button {
@@ -1035,7 +1037,6 @@ body.menu-opened {
 .product-info__sharing {
 	justify-content: center;
 }
-
 }
 
 @media (max-width: 575px) {
