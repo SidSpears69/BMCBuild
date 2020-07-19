@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vendors/fontawesome/css/all.css">
+    <link rel="stylesheet" href="vendors/swiper/swiper.min.css">
+    <link rel="stylesheet" href="vendors/magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="page-header__top">
+            <div class="wrapper">
+                <button class="menu__toggle" title="открыть меню"><i class="fas fa-bars"></i></button>
+                <a href="#login" class="page-header__enter">Вход на сайт <i class="fas fa-lock"></i></a>
+            </div>
+        </div>
+        <div class="wrapper wrapper--mobile">
+            <div class="page-header__navigation">
+                <a href="javascript:void(0)" class="page-header__logo" title="На главную"><img src="img/logo.png"
+                        alt="Логотип">На главную</a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Объявления</a></li>
+                        <li class="menu__item menu__item--dropdown active"><a href="javascript:void(0)"
+                                class="menu__link">Каталоги<i class="fas fa-angle-down"></i></a>
+                            <div class="menu__submenu-wrapper">
+                                <ul class="menu__submenu">
+                                    <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Рюкзаки</a>
+                                    </li>
+                                    <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Обувь</a>
+                                    </li>
+                                    <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Рубашки</a>
+                                    </li>
+                                    <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Джинсы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Участники</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Партнеры</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)" class="menu__link">О платформе</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)" class="menu__link">Новости</a></li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <button class="search__toggle" title="Отобразить поиск"><i class="fas fa-search"></i></button>
+                    <div class="search__wrapper">
+                        <form action="javascript:void(0)" class="search__form">
+                            <input type="search" name="search" id="search" class="search__input"
+                                placeholder="Поиск товара">
+                            <button type="submit" class="search__submit">Искать</button>
+                        </form>
+                    </div>
+                </div>
+                <a href="#favourites" class="page-header__link page-header__link--favourites"
+                    title="Избранное"><i class="far fa-heart"></i><span>2</span></a>
+                <a href="#basket" class="page-header__link page-header__link--basket" title="Корзина"><i
+                        class="fas fa-shopping-bag"></i><span>0</span></a>
+            </div>
+        </div>
+    </header>
+    <main class="product">
+        <div class="wrapper">
+            <div class="product-images">
+                <div class="product-images__big-photo">
+                    <img src="img/green.png" alt="Фото товара">
+                </div>
+                <div class="product-images__slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="product-images__photo swiper-slide">
+                                <img src="img/green.png" alt="Вид спереди">
+                            </div>
+                            <div class="product-images__photo swiper-slide">
+                                <img src="img/green-1.png" alt="Вид сзади">
+                            </div>
+                            <div class="product-images__photo swiper-slide">
+                                <img src="img/green-2.png" alt="Внутренняя часть">
+                            </div>
+                            <div class="product-images__photo swiper-slide">
+                                <img src="img/green-3.png" alt="Вид справа">
+                            </div>
+                            <div class="product-images__photo swiper-slide">
+                                <img src="img/green-4.png" alt="Вид слева">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="product-description">
+                <div class="product-description__top">
+                    <h1 class="product-description__title">Рюкзак PUMA</h1>
+                    <div class="rating">
+                        <p class="rating__text">Просмотров: <span class="rating__counter">200</span></p>
+                        <div class="rating__stars" id="rating-1">
+                            <input type="hidden" name="val" value="3" />
+                            <input type="hidden" name="vote-id" value="1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="product-description__buy-info">
+                    <p class="price"><span class="price__value">5 000.00 </span>KZT / Шт.</p>
+                    <p class="availability">В наличии на складе <span class="availability__quantity">(1)</span></p>
+                </div>
+                <div class="product-description__colors">
+                    <span>Цвет:</span>
+                    <div class="colors">
+                        <input type="radio" name="colors" id="green" value="Зеленый" class="colors__radio" checked>
+                        <label class="colors__item" for="green"><span class="colors__value"
+                                style="background-color: #86c255;"></span>Зеленый</label>
+                        <input type="radio" name="colors" id="yellow" value="Желтый" class="colors__radio">
+                        <label class="colors__item" for="yellow"><span class="colors__value"
+                                style="background-color: #e9eb5b;"></span>Желтый</label>
+                        <input type="radio" name="colors" id="red" value="Красный" class="colors__radio">
+                        <label class="colors__item" for="red"><span class="colors__value"
+                                style="background-color: #e84b4b;"></span>Красный</label>
+                        <input type="radio" name="colors" id="blue" value="Синий" class="colors__radio">
+                        <label class="colors__item" for="blue"><span class="colors__value"
+                                style="background-color: #4b91e8;"></span>Синий</label>
+                    </div>
+                </div>
+                <div class="delivery-method">
+                    <p class="delivery-method__title">Способ доставки:</p>
+                    <input type="radio" name="delivery" id="pickup" value="Самовывоз" class="delivery-method__input"
+                        checked>
+                    <label for="pickup"
+                        class="delivery-method__controls delivery-method__controls"><span>Самовывоз</span></label>
+                    <input type="radio" name="delivery" id="delivery" value="Доставка" class="delivery-method__input">
+                    <label for="delivery"
+                        class="delivery-method__controls delivery-method__controls--delivery"><span>Доставка</span></label>
+                    <div class="delivery-method__tab-content" id="pickup__adresses">
+                        <p class="delivery-method__title delivery-method__title--tab-content">Пункты самовывоза</p>
+                        <input type="radio" name="pickup-points" id="pickup-address-1"
+                            value="Мангеликель 17 ЖК Коркем (Мангеликель 17)" class="delivery-method__input" checked>
+                        <label for="pickup-address-1" class="delivery-method__adress">Мангеликель 17 ЖК Коркем
+                            (Мангеликель 17)</label>
+                        <input type="radio" name="pickup-points" id="pickup-address-2"
+                            value="Шоурум № 1 2018 (Абая 8 Торговый дом Алтын)" class="delivery-method__input">
+                        <label for="pickup-address-2" class="delivery-method__adress">Шоурум № 1
+                            2018 (Абая 8 Торговый дом Алтын)</label>
+                    </div>
+                    <div class="delivery-method__tab-content" id="delivery__adresses">
+                        <p class="delivery-method__title delivery-method__title--tab-content">Пункты доставки</p>
+                        <input type="radio" name="delivery-points" id="delivery-address-1"
+                            value="Мангеликель 25 ЖК Коркем (Мангеликель 25)" class="delivery-method__input" checked>
+                        <label for="delivery-address-1" class="delivery-method__adress">Мангеликель 25 ЖК Коркем
+                            (Мангеликель 25)</label>
+                        <input type="radio" name="delivery-points" id="delivery-address-2"
+                            value="Шоурум № 2 2020 (Абая 15 Торговый дом Алтын)" class="delivery-method__input">
+                        <label for="delivery-address-2" class="delivery-method__adress">Шоурум № 2
+                            2020 (Абая 15 Торговый дом Алтын)</label>
+                    </div>
+                </div>
+                <div class="product-controls">
+                    <button class="product-controls__button product-controls__button--basket"><i
+                            class="fas fa-shopping-bag"></i> Добавить в
+                        корзину</button>
+                    <button class="product-controls__button product-controls__button--borders product-controls__button--favourites"><i
+                            class="far fa-heart"></i> В избранное</button>
+                    <a href="javascript:void(0)"
+                        class="product-controls__button product-controls__button--borders">Оптовые предложения</a>
+                </div>
+                <div class="product-info">
+                    <p class="product-info__text">Товаров в корзине: <span
+                            class="product-info__quantity product-info__quantity--basket">2</span>
+                    </p>
+                    <p class="product-info__text">В избранном: <span
+                            class="product-info__quantity product-info__quantity--favourites">5</span></p>
+                    <div class="product-info__sharing">
+                        <p>Поделиться товаром:</p>
+                        <div class="sharing">
+                            <a href="javascript:void(0)" title="Twitter" class="sharing__link"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="javascript:void(0)" title="Facebook" class="sharing__link"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="javascript:void(0)" title="Вконтакте" class="sharing__link"><i
+                                    class="fab fa-vk"></i></a>
+                            <a href="javascript:void(0)" title="Одноклассники" class="sharing__link"><i
+                                    class="fab fa-odnoklassniki"></i></a>
+                            <a href="javascript:void(0)" title="Google Plus" class="sharing__link"><i
+                                    class="fab fa-google-plus-g"></i></a>
+                            <a href="javascript:void(0)" title="Linkedin" class="sharing__link"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="popup mfp-hide" id="basket">
+        <p class="popup__title">Корзина</p>
+        <p class="popup_empty">Корзина пуста</p>
+        <div class="popup__item">
+            <img src="img/green-1.png" alt="Название товара">
+            <div class="popup__description">
+                <p class="popup__product-name">Рюкзак Nike</p>
+                <p>Цвет: <span class="popup__color">Зеленый</span></p>
+                <p>Цена: <span class="popup__price">5 000.00 </span>KZT</p>
+                <p>Количество: <span class="popup__quantity">1</p>
+            </div>
+            <button class="popup__button" title="Удалить товар"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="popup__item">
+            <img src="img/green-2.png" alt="Название товара">
+            <div class="popup__description">
+                <p class="popup__product-name">Рюкзак Nike</p>
+                <p>Цвет: <span class="popup__color">Зеленый</span></p>
+                <p>Цена: <span class="popup__price">5 000.00 </span>KZT</p>
+                <p>Количество: <span class="popup__quantity">1</p>
+            </div>
+            <button class="popup__button" title="Удалить товар"><i class="fas fa-times"></i></button>
+        </div>
+        <button class="popup__control popup__control--borders">Очистить корзину</button>
+        <a href="javascript:void(0)" class="popup__control popup__control--orange">Оформить заказ</a>
+    </div>
+    <div class="popup mfp-hide" id="favourites">
+        <p class="popup__title">Избранное</p>
+        <p class="popup_empty">Нет товаров в избранном</p>
+        <div class="popup__item">
+            <img src="img/green-2.png" alt="Фото товара">
+            <div class="popup__description">
+                <p class="popup__product-name">Рюкзак Nike</p>
+                <p>Цвет: <span class="popup__color">Желтый</span></p>
+                <p>Цена: <span class="popup__price">5 000.00</span>KZT</p>
+            </div>
+            <button class="popup__button" title="Удалить товар"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="popup__item">
+            <img src="img/green-1.png" alt="Фото товара">
+            <div class="popup__description">
+                <p class="popup__product-name">Рюкзак Nike</p>
+                <p>Цвет: <span class="popup__color">Зеленый</span></p>
+                <p>Цена: <span class="popup__price">5 000.00 </span>KZT</p>
+            </div>
+            <button class="popup__button" title="Удалить товар"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+    <div class="popup mfp-hide" id="login">
+        <p class="popup__title">Вход на сайт</p>
+        <form action="#" class="popup-form">
+            <input type="text" name="login" id="login" placeholder="Введите имя" required class="popup__input">
+            <input type="password" name="password" id="password" placeholder="Введите пароль" required
+                class="popup__input">
+            <input type="email" name="email" id="email" placeholder="Введите email" required class="popup__input">
+            <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required pattern="^[0-9-+\s()]*$"
+                class="popup__input">
+            <button type="submit" class="popup__control popup__control--orange">Войти</button>
+        </form>
+    </div>
+    <template id="product-images">
+        <div class="product-images__big-photo">
+            <img src="" alt="Фото товара">
+        </div>
+        <div class="product-images__slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </template>
+    <template id="slide">
+        <div class="product-images__photo swiper-slide">
+            <img src="" alt="Фото товара">
+        </div>
+    </template>
+    <template id="order">
+            <div class="popup__item">
+                <img src="img/original-small-1.png" alt="Фото товара">
+                <div class="popup__description">
+                    <p class="popup__product-name">Рюкзак Puma</p>
+                    <p>Цвет: <span class="popup__color">Желтый</span></p>
+                    <p>Цена: <span class="popup__price">5 000.00 </span>KZT</p>
+                    <p>Количество: <span class="popup__quantity">1</p>
+                </div>
+                <button class="popup__button" title="Удалить товар"><i class="fas fa-times"></i></button>
+            </div>
+    </template>
+    <template id="like">
+        <div class="popup__item">
+            <img src="img/original-small-1.png" alt="Фото товара">
+            <div class="popup__description">
+                <p class="popup__product-name">Рюкзак Puma</p>
+                <p>Цвет: <span class="popup__color">Желтый</span></p>
+                <p>Цена: <span class="popup__price">5 000.00 </span>KZT</p>
+            </div>
+            <button class="popup__button" title="Удалить товар"><i class="fas fa-times"></i></button>
+        </div>
+</template>
+    <script src="vendors/jquery.min.js"></script>
+    <script src="vendors/jquery.rating-2.0.js"></script>
+    <script src="vendors/swiper/swiper.min.js"></script>
+    <script src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
